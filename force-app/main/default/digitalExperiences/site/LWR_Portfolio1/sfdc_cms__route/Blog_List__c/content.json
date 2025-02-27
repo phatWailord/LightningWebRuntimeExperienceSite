@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Blog List",
+  "contentBody" : {
+    "activeViewId" : "Blog_List",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "custom-blog-list",
+    "urlPrefix" : "blog-list"
+  },
+  "urlName" : "blog-list"
+}

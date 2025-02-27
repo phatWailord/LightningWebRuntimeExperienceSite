@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Interactive Resume",
+  "contentBody" : {
+    "activeViewId" : "Interactive_Resume",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "custom-interactive-resume",
+    "urlPrefix" : "interactive-resume"
+  },
+  "urlName" : "interactive-resume"
+}

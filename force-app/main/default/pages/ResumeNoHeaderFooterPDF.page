@@ -1,0 +1,78 @@
+<apex:page controller="ResumePDFHelper" renderAs="PDF">
+
+
+
+
+    <apex:stylesheet value="{!$Resource.pdfStyle}" />
+
+
+
+    <table style="width: 100%;">
+        <tbody>
+            <tr>
+                <td style="text-align: left">
+                    <p class="titleText">William L. Roach-Barrette,
+                        <br/>Certified Salesforce Platform 1 Developer</p>
+                </td>
+                <td style="text-align: right; width: 467px;">
+                    <p class="titleText">
+                        <br/> https://www.linkedin.com/in/wroachbarrette/
+                        <br/> https://github.com/phatWailord </p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <apex:repeat value="{!allJobs}" var="job" id="id">
+        <p>
+            <div class="jobTitle">
+                <apex:outputText value="{!job.Name}" /> at
+                <apex:outputText value=" {!job.Company_Name__c}" />:</div>
+            <div class="jobDates">
+                <apex:outputText value=" {!job.Start_Date__c}" />
+                <apex:outputtext value="{!IF(job.Current_Full_Time_Position__c, ' - Present, Currently Employed for: ' + job.Duration__c ,' - ' + TEXT(job.End_Date__c) + ', Employed for: ' + Job.Duration__c)}"
+                />
+            </div>
+        </p>
+        <div class="skills">
+            <apex:outputText value=" {!job.Skills__c}" />
+        </div>
+
+
+        <apex:repeat value="{!allJobsMap[job]}" var="exp">
+            <li>
+
+                <div class="expTitle">
+                    <apex:outputText value="{!exp.Name}" /> </div>
+                <div>
+                    <apex:outputText value="{!exp.Description__c}" escape="false" />
+                </div>
+            </li>
+
+        </apex:repeat>
+
+
+        <hr/>
+
+
+
+
+    </apex:repeat>
+
+    <div class="educationDegreeShort">Bachelors of Science in Space Systems Engineering</div>
+    <div>
+        <span class="educationUniversityShort">Morehead State University</span>,
+        <span class="educationYearShort">Class of May 2017</span>
+    </div>
+    <br/>
+    <div class="educationDegreeShort">Associates in Computer Science</div>
+    <div>
+        <span class="educationUniversityShort">The Carol Martin Gatton Academy of Mathemtaics and Science at Western Kentucky University</span>,
+        <span class="educationYearShort">Class of May 2013</span>
+    </div>
+
+
+
+</apex:page>

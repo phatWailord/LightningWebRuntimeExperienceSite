@@ -1,0 +1,20 @@
+<template>
+  <div class="slds-wrap slds-text-heading_small slds-hyphenate text-container">
+    {job.Name} at <br />
+    {job.Company_Name__c}: <br />
+    {job.Start_Date__c}
+    <!-- Using these templates we are able to format the start and end dates properly for both active jobs and jobs with a known end date-->
+    <template if:true={job.Current_Full_Time_Position__c}>
+      - Today
+      <div class="slds-show_medium">
+        Currently Employed for {job.Duration__c}
+      </div>
+    </template>
+    <template if:false={job.Current_Full_Time_Position__c}
+      >- {job.End_Date__c}
+      <div class="slds-show_medium">
+        Employed for {job.Duration__c}
+      </div></template
+    >
+  </div>
+</template>

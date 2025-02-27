@@ -1,0 +1,67 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Interactive Resume",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"e124de9d-60dd-4725-8e2a-c07e84641f55\",\"columns\":[{\"UUID\":\"634cf1f6-2757-48f1-a878-9894ee481067\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:resumeViewMainLWR",
+              "id" : "8967d95d-6337-41c7-8822-bddb03fd25ea",
+              "type" : "component"
+            } ],
+            "id" : "634cf1f6-2757-48f1-a878-9894ee481067",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "e124de9d-60dd-4725-8e2a-c07e84641f55",
+          "type" : "component"
+        } ],
+        "id" : "16d6524b-beb6-472a-813a-eb54fda711af",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Interactive Resume",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "2586e0bd-9269-4f29-a45e-c67f40113ea5",
+          "type" : "component"
+        } ],
+        "id" : "925e3dcf-f898-47e6-bc92-e029ed6cedd7",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "dac9fa22-b147-4d1f-a6a0-fa0712df0e3a",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-interactive-resume"
+  },
+  "urlName" : "interactive-resume"
+}

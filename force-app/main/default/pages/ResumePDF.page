@@ -1,0 +1,120 @@
+<apex:page controller="ResumePDFHelper" renderAs="PDF">
+
+
+
+
+   <apex:stylesheet value="{!$Resource.pdfStyle}" />
+
+
+   <div class="bottom-right">
+      Powered By Salesforce
+   </div>
+   <div class="bottom-left">
+      Genereated In Visualforce
+   </div>
+   <div class="top-right">
+      <div> Generated: {!DAY(Today())} {!CASE(MONTH(Today()), 1, 'January', 2, 'February', 3, 'March', 4, 'April', 5, 'May', 6,
+         'June', 7, 'July', 8, 'August', 9, 'September', 10, 'October', 11, 'November', 12, 'December', 'Unknown')} {!YEAR(Today())}</div>
+   </div>
+   <div class="top-center">
+      https://awesomeopossum-dev-ed.develop.my.site.com/lwrPortfolio/
+   </div>
+   <div class="top-left">Get More Information At:</div>
+
+
+
+   <table style="width: 100%;">
+      <tbody>
+         <tr>
+            <td style="text-align: left">
+               <p class="titleText">William L. Roach-Barrette,
+                  <br/>Certified Salesforce Platform 1 Developer</p>
+            </td>
+            <td style="text-align: right; width: 467px;">
+               <p class="titleText">
+                  <br/> https://www.linkedin.com/in/wroachbarrette/
+                  <br/> https://github.com/phatWailord </p>
+
+            </td>
+         </tr>
+      </tbody>
+   </table>
+
+
+   <apex:repeat value="{!allJobs}" var="job" id="id">
+      <p>
+         <div class="jobTitle">
+            <apex:outputText value="{!job.Name}" /> at
+            <apex:outputText value=" {!job.Company_Name__c}" />:</div>
+         <div class="jobDates">
+
+
+
+            <apex:outputPanel rendered="{!(job.Current_Full_Time_Position__c)}">
+               <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                  <apex:param value="{!job.Start_Date__c}" />
+               </apex:outputText>
+
+               <apex:outputtext value=" - Present. Currently Employed for: {!job.Duration__c}" />
+
+
+            </apex:outputPanel>
+
+            <apex:outputPanel rendered="{!(!job.Current_Full_Time_Position__c)}">
+               <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                  <apex:param value="{!job.Start_Date__c}" />
+               </apex:outputText>
+               <apex:outputText value="- {0, date, MMMM d','  yyyy}">
+                  <apex:param value="{!job.End_Date__c}" />
+               </apex:outputText>
+               <apex:outputtext value=". Employed for: {!job.Duration__c}" />
+
+
+            </apex:outputPanel>
+
+
+
+
+
+         </div>
+      </p>
+      <div class="skills">
+         <apex:outputText value=" {!job.Skills__c}" />
+      </div>
+
+
+      <apex:repeat value="{!allJobsMap[job]}" var="exp">
+         <li>
+
+            <div class="expTitle">
+               <apex:outputText value="{!exp.Name}" /> </div>
+            <div>
+               <apex:outputText value="{!exp.Description__c}" escape="false" />
+            </div>
+         </li>
+
+      </apex:repeat>
+
+
+      <hr/>
+
+
+
+
+   </apex:repeat>
+
+   <div class="educationDegreeShort">Bachelors of Science in Space Systems Engineering</div>
+   <div>
+      <span class="educationUniversityShort">Morehead State University</span>,
+      <span class="educationYearShort">Class of May 2017</span>
+   </div>
+   <br/>
+   <div class="educationDegreeShort">Asscoiates in Computer Science</div>
+   <div>
+      <span class="educationUniversityShort">The Carol Martin Gatton Academy of Mathemtaics and Science at Western Kentucky University</span>,
+      <span class="educationYearShort">Class of May 2013</span>
+   </div>
+
+
+
+</apex:page>

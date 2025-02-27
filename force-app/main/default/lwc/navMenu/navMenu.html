@@ -1,0 +1,23 @@
+<template>
+  <div class="outer-container">
+    <div class="topnav" id="myTopnav">
+      <div class="dropdown">
+        <button class="dropbtn" onclick={handleHomeClicked}>
+          Home
+          <i class="icon-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a onclick={navigateToSkillHome} data-target-id="skill">My Skills</a>
+          <a onclick={navigateToAboutHome} data-target-id="about">About Me</a>
+        </div>
+      </div>
+      <a class="interactive-resume" onclick={navigateToInteractiveResume}
+        >Interactive Resume</a
+      >
+      <a class="interactive-resume" onclick={navigateToBlogList}>Blog List</a>
+      <a class="icon" onclick={handleHamburgerClicked}>
+        <i class="icon-menu"></i>
+      </a>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,46 @@
+<template>
+<div class="body">
+<div class="header">
+
+<div class="title flexCenter">
+<h1>Awesome <br class="mobile-break">Opossum</h1>
+
+</div>
+
+<nav class="nav">
+<div id="hamburger" class="hamburger flexCenter" tabindex="0" aria-label="Mobile menu button">
+    <i class="icon-menu"></i>
+</div>
+<ul class="menu flexCenter">
+
+    <li class="menuItem flexCenter" tabindex="0" aria-label="Buttons that scroll you to parts of the home page">
+        Home
+        <ul class="subMenu">
+            <li class="subItem flexCenter" tabindex="0" aria-label="My skills section of home page">
+                <a onclick={navigateToSkillHome} data-target-id="skill">My Skills</a>
+            </li>
+            <li class="subItem flexCenter" tabindex="0" aria-label="About me section of home page">
+                <a onclick={navigateToAboutHome} data-target-id="about">About Me</a>
+            </li>
+        </ul>
+    </li>
+    <li class="menuItem flexCenter" tabindex="0">
+        <a class="interactive-resume" onclick={navigateToInteractiveResume}>Interactive Resume</a>
+    </li>
+    <li class="menuItem flexCenter" tabindex="0">
+        <a class="interactive-resume" onclick={navigateToBlogList}>Blog List</a>
+    </li>
+
+
+
+</ul>
+
+
+
+
+</nav>
+</div>
+</div>
+</div>
+
+</template>

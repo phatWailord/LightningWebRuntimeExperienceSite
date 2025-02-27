@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Message Channel to pass Count updates</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>Message Channel For NavBar Control.</description>
+        <fieldName>scrollToElementId</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Name of the page we want to target the message a</description>
+        <fieldName>pageTarget</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>behavior of scroll such as instant or smooth</description>
+        <fieldName>scrollBehavior</fieldName>
+    </lightningMessageFields>
+    <masterLabel>PortfolioNavigation</masterLabel>
+</LightningMessageChannel>

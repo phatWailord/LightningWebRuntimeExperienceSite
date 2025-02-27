@@ -1,0 +1,9 @@
+<template>
+  <details class="styled">
+    <summary class="tile-text-custom"><h4>{experience.Name}:</h4></summary>
+
+    <lightning-formatted-rich-text
+      value={experience.Description__c}
+    ></lightning-formatted-rich-text>
+  </details>
+</template>

@@ -1,0 +1,32 @@
+.jobBox {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.companyIcon {
+  align-self: start;
+  margin-top: 10px;
+}
+
+.positionAndCompany {
+  align-self: right;
+  display: grid;
+}
+
+.position {
+}
+
+.company {
+}
+
+.employmentPeriod {
+}
+
+.jobHeader {
+}
+
+@media screen and (max-width: 768px) {
+  .companyIcon {
+    margin-top: 15px;
+  }
+}

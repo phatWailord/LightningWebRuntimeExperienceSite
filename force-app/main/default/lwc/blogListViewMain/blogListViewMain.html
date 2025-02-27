@@ -1,0 +1,28 @@
+<template>
+  <div class="outter-container">
+    <template if:true={contentItems}>
+      <div class="blog-grid">
+        <template for:each={contentItems} for:item="content">
+          <div
+            key={content.key}
+            data-id={content.key}
+            class="blog-item"
+            style="cursor: pointer"
+            onclick={handleBlogPostClick}
+          >
+            <div class="slds-text-heading_medium">{content.title}</div>
+
+            <div class="image-center">
+              <img
+                class="slds-media_responsive"
+                src={content.url}
+                alt="alt text"
+              />
+            </div>
+            <p>{content.excerpt}</p>
+          </div>
+        </template>
+      </div>
+    </template>
+  </div>
+</template>

@@ -1,0 +1,5 @@
+{
+  "apiName" : "Interactive_Resume",
+  "type" : "sfdc_cms__view",
+  "path" : "views"
+}

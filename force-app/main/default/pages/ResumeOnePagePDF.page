@@ -1,0 +1,138 @@
+<apex:page id="ResumeOnePage" controller="ResumePDFHelper" renderAs="pdf">
+
+	<table style="width: 100%;">
+
+
+
+		<apex:stylesheet value="{!$Resource.pdfStyle}" />
+
+
+		<div class="bottom-right">
+			Powered By Salesforce
+		</div>
+		<div class="bottom-left">
+			Genereated In Visualforce
+		</div>
+		<div class="top-right">
+			<div> Made: {!DAY(Today())} {!CASE(MONTH(Today()), 1, 'January', 2, 'February', 3, 'March', 4, 'April', 5, 'May', 6, 'June',
+				7, 'July', 8, 'August', 9, 'September', 10, 'October', 11, 'November', 12, 'December', 'Unknown')} {!YEAR(Today())}</div>
+		</div>
+		<div class="top-center">
+			https://awesomeopossum-dev-ed.develop.my.site.com/portfolio/s/resume
+		</div>
+		<div class="top-left">More Info At:</div>
+
+
+
+
+		<tbody>
+			<tr>
+				<td style="text-align: left">
+					<div class="titleText">WILLIAM ROACH-BARRETTE</div>
+					<div>Certified Salesforce Platform 1 Developer</div>
+				</td>
+				<td style="text-align: right; width: 200px;">
+					<div class="titleLinks">wroachbarrette@icloud.com https://www.salesforce.com/trailblazer/wroachbarrette </div>
+
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<table style="width: 100%;">
+		<tbody>
+
+			<tr>
+				<td style="vertical-align:top;">
+					<div class="jobTitle">SUMMARY</div>
+					<hr/>
+					<p class="aboutMeShort"> Certified Salesforce Developer with a seven years experience Apex and Lightning Web Component development. Seeking to
+						leverage my skills building robust Salesforce ecosystems to contribute to the growth of an established company. For
+						more information on my work please visit my Salesforce Community, link at the top of the page. There you will find
+						a Lightning Web Component allowing you to search through my complete Resume.</p>
+
+					<div class="jobTitle">EXPERIENCES</div>
+					<hr/>
+
+					<apex:repeat value="{!allJobsShort}" var="job" id="id">
+						<p>
+							<div class="jobTitle">
+								<apex:outputText value=" {!job.Company_Name__c}" />:</div>
+							<div class="jobDatesShort">
+								<apex:outputtext value="{!IF(job.Current_Full_Time_Position__c, 'Currently Employed for: ' + job.Duration__c , 'Employed for: ' + Job.Duration__c)}"
+								/>
+							</div>
+						</p>
+
+
+
+						<apex:repeat value="{!allJobsMapShort[job]}" var="exp">
+							<li>
+
+								<div class="expTitleShort">
+									<apex:outputText value="{!exp.Name}" /> </div>
+
+							</li>
+
+						</apex:repeat>
+
+
+					</apex:repeat>
+					<div class="jobTitle">EDUCATION</div>
+					<hr/>
+
+
+					<div class="educationDegreeShort">Bachelors of Science in Space Systems Engineering</div>
+					<div>
+						<span class="educationUniversityShort">Morehead State University</span>,
+						<span class="educationYearShort">Class of 2017</span>
+					</div>
+					<br/>
+					<div class="educationDegreeShort">Asscoiates in Computer Science</div>
+					<div>
+						<span class="educationUniversityShort">The Carol Martin Gatton Academy of Mathemtaics and Science at Western Kentucky University</span>,
+						<span class="educationYearShort">Class of 2013</span>
+					</div>
+
+				</td>
+				<td style=" width: 267px; vertical-align:top;">
+					<div class="jobTitle">STRENGHTS</div>
+					<hr/>
+
+					<div class="strengthTitle">Agile Methodologies</div>
+					<p class="strengthDescription"> Acted as SCRUM lead for team of eight developers conducting daily standups, weekly refinements, and quartly planning
+						sessions. </p>
+					<div class="strengthTitle">Communication</div>
+					<p class="strengthDescription">Communicate with end-users and key steakholders to ensure total functionality of expected deliverables while documenting
+						the end-to-end process.</p>
+					<div class="strengthTitle">Code Clean-Up</div>
+					<p class="strengthDescription">Break down complex systems into base components to create steamlined and effecient solutions.</p>
+
+					<div class="jobTitle">SKILLS</div>
+					<hr/>
+
+					<div class="skillsShort">
+						<apex:repeat value="{!allSkillsShort}" var="skill">
+
+
+							<apex:outputText value="{!skill}  " />
+
+
+
+						</apex:repeat>
+					</div>
+					<br/>
+
+
+
+
+
+
+				</td>
+			</tr>
+
+		</tbody>
+	</table>
+
+</apex:page>

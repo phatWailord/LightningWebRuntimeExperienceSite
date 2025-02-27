@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AI</fullName>
+        <default>false</default>
+        <label>AI</label>
+    </customValue>
+    <customValue>
+        <fullName>Altium</fullName>
+        <default>false</default>
+        <label>Altium</label>
+    </customValue>
+    <customValue>
+        <fullName>Analog Circuit Design</fullName>
+        <default>false</default>
+        <label>Analog Circuit Design</label>
+    </customValue>
+    <customValue>
+        <fullName>Analytics Cloud</fullName>
+        <default>false</default>
+        <label>Analytics Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Android</fullName>
+        <default>false</default>
+        <label>Android</label>
+    </customValue>
+    <customValue>
+        <fullName>Apex</fullName>
+        <default>false</default>
+        <label>Apex</label>
+    </customValue>
+    <customValue>
+        <fullName>App Cloud</fullName>
+        <default>false</default>
+        <label>App Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Arduino</fullName>
+        <default>false</default>
+        <label>Arduino</label>
+    </customValue>
+    <customValue>
+        <fullName>Art</fullName>
+        <default>false</default>
+        <label>Art</label>
+    </customValue>
+    <customValue>
+        <fullName>ASIC</fullName>
+        <default>false</default>
+        <label>ASIC</label>
+    </customValue>
+    <customValue>
+        <fullName>Aura</fullName>
+        <default>false</default>
+        <label>Aura</label>
+    </customValue>
+    <customValue>
+        <fullName>Bandsaw</fullName>
+        <default>false</default>
+        <label>Bandsaw</label>
+    </customValue>
+    <customValue>
+        <fullName>Bash</fullName>
+        <default>false</default>
+        <label>Bash</label>
+    </customValue>
+    <customValue>
+        <fullName>Batch Apex</fullName>
+        <default>false</default>
+        <label>Batch Apex</label>
+    </customValue>
+    <customValue>
+        <fullName>Bike</fullName>
+        <default>false</default>
+        <label>Bike</label>
+    </customValue>
+    <customValue>
+        <fullName>BitBucket</fullName>
+        <default>false</default>
+        <label>BitBucket</label>
+    </customValue>
+    <customValue>
+        <fullName>C++</fullName>
+        <default>false</default>
+        <label>C++</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloudflare</fullName>
+        <default>false</default>
+        <label>Cloudflare</label>
+    </customValue>
+    <customValue>
+        <fullName>CNC</fullName>
+        <default>false</default>
+        <label>CNC</label>
+    </customValue>
+    <customValue>
+        <fullName>CodeServer</fullName>
+        <default>false</default>
+        <label>CodeServer</label>
+    </customValue>
+    <customValue>
+        <fullName>Commerce Cloud</fullName>
+        <default>false</default>
+        <label>Commerce Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Community Builder</fullName>
+        <default>false</default>
+        <label>Community Builder</label>
+    </customValue>
+    <customValue>
+        <fullName>Containerization</fullName>
+        <default>false</default>
+        <label>Containerization</label>
+    </customValue>
+    <customValue>
+        <fullName>Copado</fullName>
+        <default>false</default>
+        <label>Copado</label>
+    </customValue>
+    <customValue>
+        <fullName>CPQ</fullName>
+        <default>false</default>
+        <label>CPQ</label>
+    </customValue>
+    <customValue>
+        <fullName>CSS</fullName>
+        <default>false</default>
+        <label>CSS</label>
+    </customValue>
+    <customValue>
+        <fullName>Custom DNS</fullName>
+        <default>false</default>
+        <label>Custom DNS</label>
+    </customValue>
+    <customValue>
+        <fullName>Dell Boomi</fullName>
+        <default>false</default>
+        <label>Dell Boomi</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital Circuit Design</fullName>
+        <default>false</default>
+        <label>Digital Circuit Design</label>
+    </customValue>
+    <customValue>
+        <fullName>Docker</fullName>
+        <default>false</default>
+        <label>Docker</label>
+    </customValue>
+    <customValue>
+        <fullName>Docker Compose</fullName>
+        <default>false</default>
+        <label>Docker Compose</label>
+    </customValue>
+    <customValue>
+        <fullName>Docker LXC</fullName>
+        <default>false</default>
+        <label>Docker LXC</label>
+    </customValue>
+    <customValue>
+        <fullName>DocuSign</fullName>
+        <default>false</default>
+        <label>DocuSign</label>
+    </customValue>
+    <customValue>
+        <fullName>Dremel</fullName>
+        <default>false</default>
+        <label>Dremel</label>
+    </customValue>
+    <customValue>
+        <fullName>Drill Press</fullName>
+        <default>false</default>
+        <label>Drill Press</label>
+    </customValue>
+    <customValue>
+        <fullName>Drone</fullName>
+        <default>false</default>
+        <label>Drone</label>
+    </customValue>
+    <customValue>
+        <fullName>Drone Piloting</fullName>
+        <default>false</default>
+        <label>Drone Piloting</label>
+    </customValue>
+    <customValue>
+        <fullName>e-Bike</fullName>
+        <default>false</default>
+        <label>e-Bike</label>
+    </customValue>
+    <customValue>
+        <fullName>Embedded Systems</fullName>
+        <default>false</default>
+        <label>Embedded Systems</label>
+    </customValue>
+    <customValue>
+        <fullName>ESP8266</fullName>
+        <default>false</default>
+        <label>ESP8266</label>
+    </customValue>
+    <customValue>
+        <fullName>Experience Cloud</fullName>
+        <default>false</default>
+        <label>Experience Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Field Service Lightning</fullName>
+        <default>false</default>
+        <label>Field Service Lightning</label>
+    </customValue>
+    <customValue>
+        <fullName>Firewall</fullName>
+        <default>false</default>
+        <label>Firewall</label>
+    </customValue>
+    <customValue>
+        <fullName>Flow Builder</fullName>
+        <default>false</default>
+        <label>Flow Builder</label>
+    </customValue>
+    <customValue>
+        <fullName>FPGA</fullName>
+        <default>false</default>
+        <label>FPGA</label>
+    </customValue>
+    <customValue>
+        <fullName>Frigate</fullName>
+        <default>false</default>
+        <label>Frigate</label>
+    </customValue>
+    <customValue>
+        <fullName>Fusion 360</fullName>
+        <default>false</default>
+        <label>Fusion 360</label>
+    </customValue>
+    <customValue>
+        <fullName>Git</fullName>
+        <default>false</default>
+        <label>Git</label>
+    </customValue>
+    <customValue>
+        <fullName>Google Coral</fullName>
+        <default>false</default>
+        <label>Google Coral</label>
+    </customValue>
+    <customValue>
+        <fullName>Google Firebase</fullName>
+        <default>false</default>
+        <label>Google Firebase</label>
+    </customValue>
+    <customValue>
+        <fullName>Hardware Design</fullName>
+        <default>false</default>
+        <label>Hardware Design</label>
+    </customValue>
+    <customValue>
+        <fullName>Hardwiring</fullName>
+        <default>false</default>
+        <label>Hardwiring</label>
+    </customValue>
+    <customValue>
+        <fullName>Helm</fullName>
+        <default>false</default>
+        <label>Helm</label>
+    </customValue>
+    <customValue>
+        <fullName>Hexacopter</fullName>
+        <default>false</default>
+        <label>Hexacopter</label>
+    </customValue>
+    <customValue>
+        <fullName>High Availability</fullName>
+        <default>false</default>
+        <label>High Availability</label>
+    </customValue>
+    <customValue>
+        <fullName>Home Assistant</fullName>
+        <default>false</default>
+        <label>Home Assistant</label>
+    </customValue>
+    <customValue>
+        <fullName>HomeLab</fullName>
+        <default>false</default>
+        <label>HomeLab</label>
+    </customValue>
+    <customValue>
+        <fullName>Home Lab</fullName>
+        <default>false</default>
+        <label>Home Lab</label>
+    </customValue>
+    <customValue>
+        <fullName>HTML</fullName>
+        <default>false</default>
+        <label>HTML</label>
+    </customValue>
+    <customValue>
+        <fullName>Hypervisor</fullName>
+        <default>false</default>
+        <label>Hypervisor</label>
+    </customValue>
+    <customValue>
+        <fullName>Instructor</fullName>
+        <default>false</default>
+        <label>Instructor</label>
+    </customValue>
+    <customValue>
+        <fullName>Integration Cloud</fullName>
+        <default>false</default>
+        <label>Integration Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>iOS</fullName>
+        <default>false</default>
+        <label>iOS</label>
+    </customValue>
+    <customValue>
+        <fullName>Java</fullName>
+        <default>false</default>
+        <label>Java</label>
+    </customValue>
+    <customValue>
+        <fullName>JavaScript</fullName>
+        <default>false</default>
+        <label>JavaScript</label>
+    </customValue>
+    <customValue>
+        <fullName>Jira</fullName>
+        <default>false</default>
+        <label>Jira</label>
+    </customValue>
+    <customValue>
+        <fullName>Jitterbit</fullName>
+        <default>false</default>
+        <label>Jitterbit</label>
+    </customValue>
+    <customValue>
+        <fullName>JSON</fullName>
+        <default>false</default>
+        <label>JSON</label>
+    </customValue>
+    <customValue>
+        <fullName>Kubernetes</fullName>
+        <default>false</default>
+        <label>Kubernetes</label>
+    </customValue>
+    <customValue>
+        <fullName>Lathe</fullName>
+        <default>false</default>
+        <label>Lathe</label>
+    </customValue>
+    <customValue>
+        <fullName>Let&apos;s Encrypt</fullName>
+        <default>false</default>
+        <label>Let&apos;s Encrypt</label>
+    </customValue>
+    <customValue>
+        <fullName>Lightning Web Components</fullName>
+        <default>false</default>
+        <label>Lightning Web Components</label>
+    </customValue>
+    <customValue>
+        <fullName>Link Budget</fullName>
+        <default>false</default>
+        <label>Link Budget</label>
+    </customValue>
+    <customValue>
+        <fullName>Longhorn</fullName>
+        <default>false</default>
+        <label>Longhorn</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing Cloud</fullName>
+        <default>false</default>
+        <label>Marketing Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Maven</fullName>
+        <default>false</default>
+        <label>Maven</label>
+    </customValue>
+    <customValue>
+        <fullName>Mechanical Engineering</fullName>
+        <default>false</default>
+        <label>Mechanical Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>Mechanics</fullName>
+        <default>false</default>
+        <label>Mechanics</label>
+    </customValue>
+    <customValue>
+        <fullName>Mill</fullName>
+        <default>false</default>
+        <label>Mill</label>
+    </customValue>
+    <customValue>
+        <fullName>MQTT</fullName>
+        <default>false</default>
+        <label>MQTT</label>
+    </customValue>
+    <customValue>
+        <fullName>Multi-Meter</fullName>
+        <default>false</default>
+        <label>Multi-Meter</label>
+    </customValue>
+    <customValue>
+        <fullName>Network Engineering</fullName>
+        <default>false</default>
+        <label>Network Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>Networking</fullName>
+        <default>false</default>
+        <label>Networking</label>
+    </customValue>
+    <customValue>
+        <fullName>NVR</fullName>
+        <default>false</default>
+        <label>NVR</label>
+    </customValue>
+    <customValue>
+        <fullName>Object Detection</fullName>
+        <default>false</default>
+        <label>Object Detection</label>
+    </customValue>
+    <customValue>
+        <fullName>Objective-C</fullName>
+        <default>false</default>
+        <label>Objective-C</label>
+    </customValue>
+    <customValue>
+        <fullName>On Site Installation</fullName>
+        <default>false</default>
+        <label>On Site Installation</label>
+    </customValue>
+    <customValue>
+        <fullName>Oscilloscope</fullName>
+        <default>false</default>
+        <label>Oscilloscope</label>
+    </customValue>
+    <customValue>
+        <fullName>PCB Design</fullName>
+        <default>false</default>
+        <label>PCB Design</label>
+    </customValue>
+    <customValue>
+        <fullName>Persistent Storage</fullName>
+        <default>false</default>
+        <label>Persistent Storage</label>
+    </customValue>
+    <customValue>
+        <fullName>PFSense</fullName>
+        <default>false</default>
+        <label>PFSense</label>
+    </customValue>
+    <customValue>
+        <fullName>Photography</fullName>
+        <default>false</default>
+        <label>Photography</label>
+    </customValue>
+    <customValue>
+        <fullName>PID Tuning</fullName>
+        <default>false</default>
+        <label>PID Tuning</label>
+    </customValue>
+    <customValue>
+        <fullName>Pilot</fullName>
+        <default>false</default>
+        <label>Pilot</label>
+    </customValue>
+    <customValue>
+        <fullName>Polishing</fullName>
+        <default>false</default>
+        <label>Polishing</label>
+    </customValue>
+    <customValue>
+        <fullName>Portainer</fullName>
+        <default>false</default>
+        <label>Portainer</label>
+    </customValue>
+    <customValue>
+        <fullName>Process Builder</fullName>
+        <default>false</default>
+        <label>Process Builder</label>
+    </customValue>
+    <customValue>
+        <fullName>Proxmox</fullName>
+        <default>false</default>
+        <label>Proxmox</label>
+    </customValue>
+    <customValue>
+        <fullName>Public Service</fullName>
+        <default>false</default>
+        <label>Public Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Python</fullName>
+        <default>false</default>
+        <label>Python</label>
+    </customValue>
+    <customValue>
+        <fullName>Quadcopter</fullName>
+        <default>false</default>
+        <label>Quadcopter</label>
+    </customValue>
+    <customValue>
+        <fullName>RADAR</fullName>
+        <default>false</default>
+        <label>RADAR</label>
+    </customValue>
+    <customValue>
+        <fullName>Radio Frequency Engineering</fullName>
+        <default>false</default>
+        <label>Radio Frequency Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>RAID</fullName>
+        <default>false</default>
+        <label>RAID</label>
+    </customValue>
+    <customValue>
+        <fullName>Rancher</fullName>
+        <default>false</default>
+        <label>Rancher</label>
+    </customValue>
+    <customValue>
+        <fullName>Rapid Prototyping</fullName>
+        <default>false</default>
+        <label>Rapid Prototyping</label>
+    </customValue>
+    <customValue>
+        <fullName>Raspberry Pi</fullName>
+        <default>false</default>
+        <label>Raspberry Pi</label>
+    </customValue>
+    <customValue>
+        <fullName>REST</fullName>
+        <default>false</default>
+        <label>REST</label>
+    </customValue>
+    <customValue>
+        <fullName>Restoration</fullName>
+        <default>false</default>
+        <label>Restoration</label>
+    </customValue>
+    <customValue>
+        <fullName>Reverse-Proxy</fullName>
+        <default>false</default>
+        <label>Reverse-Proxy</label>
+    </customValue>
+    <customValue>
+        <fullName>RF Engineering</fullName>
+        <default>false</default>
+        <label>RF Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>RKE2</fullName>
+        <default>false</default>
+        <label>RKE2</label>
+    </customValue>
+    <customValue>
+        <fullName>Router</fullName>
+        <default>false</default>
+        <label>Router</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Cloud</fullName>
+        <default>false</default>
+        <label>Sales Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce Administration</fullName>
+        <default>false</default>
+        <label>Salesforce Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce Classic</fullName>
+        <default>false</default>
+        <label>Salesforce Classic</label>
+    </customValue>
+    <customValue>
+        <fullName>Salesforce CLI</fullName>
+        <default>false</default>
+        <label>Salesforce CLI</label>
+    </customValue>
+    <customValue>
+        <fullName>Sanding</fullName>
+        <default>false</default>
+        <label>Sanding</label>
+    </customValue>
+    <customValue>
+        <fullName>Scheduled Apex Jobs</fullName>
+        <default>false</default>
+        <label>Scheduled Apex Jobs</label>
+    </customValue>
+    <customValue>
+        <fullName>Schematic Planning</fullName>
+        <default>false</default>
+        <label>Schematic Planning</label>
+    </customValue>
+    <customValue>
+        <fullName>Screen Flows</fullName>
+        <default>false</default>
+        <label>Screen Flows</label>
+    </customValue>
+    <customValue>
+        <fullName>Search and Rescue</fullName>
+        <default>false</default>
+        <label>Search and Rescue</label>
+    </customValue>
+    <customValue>
+        <fullName>Service Cloud</fullName>
+        <default>false</default>
+        <label>Service Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>SF Classic</fullName>
+        <default>false</default>
+        <label>SF Classic</label>
+    </customValue>
+    <customValue>
+        <fullName>SF Lightning</fullName>
+        <default>false</default>
+        <label>SF Lightning</label>
+    </customValue>
+    <customValue>
+        <fullName>Site Survey</fullName>
+        <default>false</default>
+        <label>Site Survey</label>
+    </customValue>
+    <customValue>
+        <fullName>Small Batch Manufacturing</fullName>
+        <default>false</default>
+        <label>Small Batch Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Small Business</fullName>
+        <default>false</default>
+        <label>Small Business</label>
+    </customValue>
+    <customValue>
+        <fullName>Smith Chart</fullName>
+        <default>false</default>
+        <label>Smith Chart</label>
+    </customValue>
+    <customValue>
+        <fullName>Soldering</fullName>
+        <default>false</default>
+        <label>Soldering</label>
+    </customValue>
+    <customValue>
+        <fullName>SolidWorks</fullName>
+        <default>false</default>
+        <label>SolidWorks</label>
+    </customValue>
+    <customValue>
+        <fullName>SOQL</fullName>
+        <default>false</default>
+        <label>SOQL</label>
+    </customValue>
+    <customValue>
+        <fullName>SOSL</fullName>
+        <default>false</default>
+        <label>SOSL</label>
+    </customValue>
+    <customValue>
+        <fullName>Spectrum Analyzer</fullName>
+        <default>false</default>
+        <label>Spectrum Analyzer</label>
+    </customValue>
+    <customValue>
+        <fullName>SpringBoot</fullName>
+        <default>false</default>
+        <label>SpringBoot</label>
+    </customValue>
+    <customValue>
+        <fullName>SQL</fullName>
+        <default>false</default>
+        <label>SQL</label>
+    </customValue>
+    <customValue>
+        <fullName>SSL Certification</fullName>
+        <default>false</default>
+        <label>SSL Certification</label>
+    </customValue>
+    <customValue>
+        <fullName>Subnet</fullName>
+        <default>false</default>
+        <label>Subnet</label>
+    </customValue>
+    <customValue>
+        <fullName>Subnetting</fullName>
+        <default>false</default>
+        <label>Subnetting</label>
+    </customValue>
+    <customValue>
+        <fullName>Surface Mount Soldering</fullName>
+        <default>false</default>
+        <label>Surface Mount Soldering</label>
+    </customValue>
+    <customValue>
+        <fullName>Table Saw</fullName>
+        <default>false</default>
+        <label>Table Saw</label>
+    </customValue>
+    <customValue>
+        <fullName>Tensorflow</fullName>
+        <default>false</default>
+        <label>Tensorflow</label>
+    </customValue>
+    <customValue>
+        <fullName>TPU</fullName>
+        <default>false</default>
+        <label>TPU</label>
+    </customValue>
+    <customValue>
+        <fullName>Traefik</fullName>
+        <default>false</default>
+        <label>Traefik</label>
+    </customValue>
+    <customValue>
+        <fullName>Transmission Line Model</fullName>
+        <default>false</default>
+        <label>Transmission Line Model</label>
+    </customValue>
+    <customValue>
+        <fullName>TrueNAS</fullName>
+        <default>false</default>
+        <label>TrueNAS</label>
+    </customValue>
+    <customValue>
+        <fullName>TrueNAS Scale</fullName>
+        <default>false</default>
+        <label>TrueNAS Scale</label>
+    </customValue>
+    <customValue>
+        <fullName>Twitch</fullName>
+        <default>false</default>
+        <label>Twitch</label>
+    </customValue>
+    <customValue>
+        <fullName>UAS</fullName>
+        <default>false</default>
+        <label>UAS</label>
+    </customValue>
+    <customValue>
+        <fullName>Ubuntu Server</fullName>
+        <default>false</default>
+        <label>Ubuntu Server</label>
+    </customValue>
+    <customValue>
+        <fullName>uLogo</fullName>
+        <default>false</default>
+        <label>uLogo</label>
+    </customValue>
+    <customValue>
+        <fullName>Verilog</fullName>
+        <default>false</default>
+        <label>Verilog</label>
+    </customValue>
+    <customValue>
+        <fullName>Video Production</fullName>
+        <default>false</default>
+        <label>Video Production</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtualization</fullName>
+        <default>false</default>
+        <label>Virtualization</label>
+    </customValue>
+    <customValue>
+        <fullName>Visualforce</fullName>
+        <default>false</default>
+        <label>Visualforce</label>
+    </customValue>
+    <customValue>
+        <fullName>Visual Studio Code</fullName>
+        <default>false</default>
+        <label>Visual Studio Code</label>
+    </customValue>
+    <customValue>
+        <fullName>VS Code</fullName>
+        <default>false</default>
+        <label>VS Code</label>
+    </customValue>
+    <customValue>
+        <fullName>XactWare</fullName>
+        <default>false</default>
+        <label>XactWare</label>
+    </customValue>
+    <customValue>
+        <fullName>XML</fullName>
+        <default>false</default>
+        <label>XML</label>
+    </customValue>
+    <customValue>
+        <fullName>ZFS</fullName>
+        <default>false</default>
+        <label>ZFS</label>
+    </customValue>
+    <description>List of skills applicable to experiences, about me and tech demos</description>
+    <masterLabel>Skills</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

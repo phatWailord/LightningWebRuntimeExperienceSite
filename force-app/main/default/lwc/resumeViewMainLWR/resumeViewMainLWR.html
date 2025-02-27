@@ -1,0 +1,45 @@
+<template>
+  <!-- <div class="jobBox">
+
+    <lightning-input
+        variant="no-label"
+        type="search"
+        placeholder="Type Here To Begin Search, Search Is Case Sensitive!"
+        value={searchString}
+        onchange={handleTextSearch} 
+        onblur={handleOnBlur}>
+    </lightning-input></div> -->
+
+  <template if:true={allJobsFormatted}>
+    <template for:each={allJobsFormatted} for:item="job">
+      <div key={job.id} class="slds-grid_vertical jobBox">
+        <div class="slds-grid slds-col slds-size_1-of-1">
+          <div
+            class="slds-media_responsive slds-col companyIcon slds-size_2-of-12 slds-large-size_1-of-12"
+          >
+            <img src={job.Icon__c} />
+          </div>
+          <div class="slds-col slds-size_10-of-12 slds-large-size_11-of-12">
+            <c-resume-job-header-L-W-R job={job}></c-resume-job-header-L-W-R>
+          </div>
+        </div>
+
+        <div class="slds-col slds-size_1-of-1">
+          <p class="slds-var-p-bottom_x-small slds-var-p-top_x-small">
+            <lightning-formatted-rich-text
+              value={job.Description__c}
+            ></lightning-formatted-rich-text>
+          </p>
+        </div>
+        <template for:each={job.Experiences__r} for:item="exp">
+          <c-resume-line-item-L-W-R
+            key={exp.id}
+            experience={exp}
+          ></c-resume-line-item-L-W-R>
+        </template>
+        <br />
+      </div>
+    </template>
+  </template>
+  <template if:true={allJobs.error}> {allJobs.error} </template>
+</template>

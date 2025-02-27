@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <masterLabel>Blog List Main Page</masterLabel>
+    <description>Displays a list of all blog posts for site</description>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightning__UrlAddressable</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+
+</LightningComponentBundle>

@@ -1,0 +1,67 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Blog Post",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"122381f4-d8ab-43e2-b4d8-1d869087190e\",\"columns\":[{\"UUID\":\"0bf7cf23-0dcc-4a10-b746-d996ef476c49\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:blogPostViewMain",
+              "id" : "452ffbf6-4328-46eb-a9fd-efee313efe0b",
+              "type" : "component"
+            } ],
+            "id" : "0bf7cf23-0dcc-4a10-b746-d996ef476c49",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "122381f4-d8ab-43e2-b4d8-1d869087190e",
+          "type" : "component"
+        } ],
+        "id" : "514dd368-b306-42f7-a844-74f79c65efc6",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Blog Post",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "bc3bb657-61cc-4306-ad9a-885f25ee4589",
+          "type" : "component"
+        } ],
+        "id" : "261b75ea-d8e8-48bb-b4bf-35a582dcafd0",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "6502fb56-1061-4150-a83e-ab3e5d7bced6",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-blog-post"
+  },
+  "urlName" : "blog-post"
+}
