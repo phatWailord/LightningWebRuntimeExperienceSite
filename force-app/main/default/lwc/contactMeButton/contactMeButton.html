@@ -2,7 +2,7 @@
   <dialog class="contact-dialog">
     <h1>Contact Me</h1>
 
-    <form onsubmit={handleSubmit}>
+    <form onsubmit={handleSubmit} class="container-section">
       <label for="first-name">
         First Name
         <input type="text" class="firstName" name="first-name" />
@@ -29,6 +29,14 @@
       <div class="btn-container">
         <input type="submit" />
         <button onclick={closeDialog}>Cancel</button>
+        <lightning-icon
+          icon-name="utility:close"
+          variant="bare"
+          size="small"
+          class="close-icon"
+          onclick={closeDialog}
+        >
+        </lightning-icon>
       </div>
     </form>
   </dialog>

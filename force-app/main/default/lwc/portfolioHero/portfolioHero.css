@@ -1,6 +1,7 @@
-.outer-container {
+.outer-container-hero {
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 15px;
 }
 
 img {
@@ -29,7 +30,7 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
-  .outer-container {
+  .outer-container-hero {
     display: flex;
     flex-direction: row-reverse;
   }

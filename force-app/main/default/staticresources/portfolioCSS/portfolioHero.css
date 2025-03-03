@@ -1,0 +1,13 @@
+
+.hidden{
+    opacity: 0;
+    scale: .8;
+    transition: all .5s;
+
+}
+
+.show{ 
+    opacity: 1;
+    scale: 1;
+
+}

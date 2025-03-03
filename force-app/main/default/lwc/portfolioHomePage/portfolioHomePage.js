@@ -1,7 +1,8 @@
 import { LightningElement, wire, track } from "lwc";
 import { NavigationMixin } from "lightning/navigation";
 import { CurrentPageReference } from "lightning/navigation";
-
+import { loadStyle } from "lightning/platformResourceLoader";
+import STYLE from "@salesforce/resourceUrl/portfolioCSS";
 import { subscribe, MessageContext } from "lightning/messageService";
 import PORTFOLIO_NAVIGATION_CHANNEL from "@salesforce/messageChannel/Portfolio_Navigation__c";
 
@@ -60,17 +61,27 @@ export default class PortfolioHomePage extends NavigationMixin(
   }
 
   renderedCallback() {
+    if (!navigator.userAgent.includes("Chrome")) {
+      console.log("were not in chromsis anymore");
+      loadStyle(this, STYLE + "/portfolioHero.css");
+    } else {
+      console.log("were inside chrome");
+      loadStyle(this, STYLE + "/portfolioHeroChrome.css");
+    }
+    var browser = navigator.userAgent;
+    console.log("browser: ", browser);
+
     this.scrollTo = this.loadedCurrentPageReference.state.c__scrollTo;
     console.log(`c__scrollTo = ${this.scrollTo}`);
 
     if (this.scrollTo == "about") {
       this.renderedCallBackFired = true;
-      let containerChoosen = this.template.querySelector(".about");
+      let chosenContainer = this.template.querySelector(".about");
       console.log("triggered about");
-      console.log(containerChoosen);
+      console.log(chosenContainer);
 
       setTimeout(function () {
-        containerChoosen.scrollIntoView({
+        chosenContainer.scrollIntoView({
           behavior: "smooth",
           block: "start"
         });
@@ -79,11 +90,11 @@ export default class PortfolioHomePage extends NavigationMixin(
       console.log("scroll into view method fired");
     } else if (this.scrollTo == "skill") {
       this.renderedCallBackFired = true;
-      let containerChoosen = this.template.querySelector(".skill");
+      let chosenContainer = this.template.querySelector(".skill");
       console.log("triggered skill");
-      console.log(containerChoosen);
+      console.log(chosenContainer);
       setTimeout(function () {
-        containerChoosen.scrollIntoView({
+        chosenContainer.scrollIntoView({
           behavior: "smooth",
           block: "start"
         });
@@ -95,12 +106,12 @@ export default class PortfolioHomePage extends NavigationMixin(
 
   handleAbout(behaviorInput) {
     //this.value = event.detail.value;
-    let containerChoosen = this.template.querySelector(".about");
+    let chosenContainer = this.template.querySelector(".about");
     console.log("triggered about");
-    console.log(containerChoosen);
+    console.log(chosenContainer);
 
     setTimeout(function () {
-      containerChoosen.scrollIntoView({
+      chosenContainer.scrollIntoView({
         behavior: behaviorInput,
         block: "start"
       });
@@ -108,11 +119,11 @@ export default class PortfolioHomePage extends NavigationMixin(
   }
   handleSkill(behaviorInput) {
     //this.value = event.detail.value;
-    let containerChoosen = this.template.querySelector(".skill");
+    let chosenContainer = this.template.querySelector(".skill");
     console.log("triggered skill");
-    console.log(containerChoosen);
+    console.log(chosenContainer);
     setTimeout(function () {
-      containerChoosen.scrollIntoView({
+      chosenContainer.scrollIntoView({
         behavior: behaviorInput,
         block: "start"
       });

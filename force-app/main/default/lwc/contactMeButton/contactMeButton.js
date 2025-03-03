@@ -1,5 +1,7 @@
 import { LightningElement } from "lwc";
 import createLead from "@salesforce/apex/ContactMeController.createLead";
+import { loadStyle } from "lightning/platformResourceLoader";
+import STYLE from "@salesforce/resourceUrl/customModalStyle";
 
 export default class ContactMeButton extends LightningElement {
   dialog;
@@ -9,6 +11,7 @@ export default class ContactMeButton extends LightningElement {
   email;
   description;
   snackbar;
+  modal;
 
   renderedCallback() {
     this.dialog = this.template.querySelector(".contact-dialog");
@@ -18,6 +21,7 @@ export default class ContactMeButton extends LightningElement {
     this.email = this.template.querySelector(".email");
     this.description = this.template.querySelector(".description");
     this.snackbar = this.template.querySelector("c-snackbar");
+    //loadStyle(this, STYLE + "/customModalStyle.css");
   }
 
   showDialog() {
@@ -25,6 +29,8 @@ export default class ContactMeButton extends LightningElement {
   }
 
   closeDialog() {
+    var modal = this.template.querySelector(".container-section");
+
     this.dialog.close();
   }
 

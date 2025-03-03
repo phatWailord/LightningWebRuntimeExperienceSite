@@ -1,0 +1,41 @@
+
+@media(prefers-reduced-motion: no-preference){
+    
+.about-me-animate {
+    scale: .8; opacity: 0;
+    animation: about-me-fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+}
+
+.skill-card-animate {
+    scale: .5; opacity: 0;
+    animation: skill-card-fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+}
+
+.hero-section-animate
+{
+    animation: hero-fade-out linear;
+    animation-timeline: view();
+    animation-range: exit;
+}
+
+}
+
+@keyframes about-me-fade-in {
+    to {scale: 1; opacity: 1;}
+}
+
+
+
+@keyframes skill-card-fade-in {
+    to {scale: 1; opacity: 1;}
+}
+
+@keyframes hero-fade-out {
+    to {opacity: 0; scale: .8;}
+}
+
+

@@ -1,22 +1,22 @@
 <template>
   <a name="skill"></a>
   <div data-id="skill" id="skill" class="outer-container">
-    <h1>My Skills</h1>
+    <h1 class="skill-card-animate hidden intro">My Skills</h1>
     <div class="card-container">
-      <div class="card">
-        <img src={trainingImageURL} />
+      <div class="card skill-card-animate hidden first">
+        <img class="slds-media_responsive" src={trainingImageURL} />
         <div class="text-container">
           <h4><b>Backend Development</b></h4>
           <p>
-            Ability to create SalesForce Custom Objects based on customer needs,
+            Ability to create Salesforce Custom Objects based on customer needs,
             controlled using both declarative Flows as well as Triggers, Trigger
             Handlers, and Helper Classes. All code is rigorously tested using
             Apex Unit Tests.
           </p>
         </div>
       </div>
-      <div class="card">
-        <img src={adminImageURL} />
+      <div class="card skill-card-animate hidden second">
+        <img class="slds-media_responsive" src={adminImageURL} />
         <div class="text-container">
           <h4><b>Custom Experience Sites</b></h4>
           <p>
@@ -27,8 +27,8 @@
           </p>
         </div>
       </div>
-      <div class="card">
-        <img src={serviceImageURL} />
+      <div class="card skill-card-animate hidden third">
+        <img class="slds-media_responsive" src={serviceImageURL} />
         <div class="text-container">
           <h4><b>Communication</b></h4>
           <p>
